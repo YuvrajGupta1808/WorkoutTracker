@@ -1,0 +1,73 @@
+
+/* Wrapper for the navbar */
+.navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Navbar */
+.navbar-wrapper h1 {
+    background-color: #333;
+    color: #EFEFEF;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 58px;
+    float: left;
+    font-weight: bold;
+}
+
+.navbar-wrapper ul {
+    list-style-type: none;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 10px;
+    padding: 20px;
+    float: right;
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    gap: 15px; /* Adds space between each list item */
+}
+
+.navbar-wrapper li {
+    display: flex;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #555;
+}
+
+.navbar-wrapper li:hover {
+    color: #ffffff;
+    background-color: #444851;
+    border-radius: 5px;
+}
+
+/* Clear floats */
+.navbar-wrapper h1::after, ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile-icon {
+    border: 2px solid #ffffff;
+    border-radius: 50%; 
+    padding: 5px;
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
